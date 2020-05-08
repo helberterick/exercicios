@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Cor secundária e terciária</title>
+</head>
+
+<body>
+	<script>		
+		
+		//conver hexadecimal string to the int again
+		var hex = prompt("Digite uma cor hexadecimal"); //hex of 10
+		var dec = parseInt(hex,16);
+		document.write("cor principal = " + hex + "<br>");
+
+		var secundariaDec = parseInt(dec * 1.129532807793149 +1);
+		var terceariaDec = parseInt(dec * 1.13095986225616 +1);
+
+		var a = secundariaDec;
+		var b = terceariaDec;
+	
+		
+		document.write("cor secundária = " + a.toString(16) + "<br>");
+		document.write("cor terciária = " + b.toString(16) + "<br>");
+
+	</script>
+</body>
+</html>
