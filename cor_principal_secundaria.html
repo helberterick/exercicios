@@ -14,6 +14,8 @@
 		var secundariaDec = parseInt(dec * 1.129532807793149 +1);
 		var terceariaDec = parseInt(dec * 1.13095986225616 +1);
 
+		if (secundariaDec > 16777215) {secundariaDec = 16777215};
+		if (terceariaDec > 16777215) {terceariaDec = 16777215}; 
 		var a = secundariaDec;
 		var b = terceariaDec;
 	
